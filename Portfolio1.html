@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prathibaa Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: rgb(241, 220, 195);
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        .navbar{
+            background-color: rgb(170, 161, 161);
+        }
+
+        .navbar a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+
+        .navbar a:hover{
+            color: darkblue;
+        }
+
+        /* Profile outer circle */
+        /* Profile outer circle - thin layer */
+        .profile-wrapper{
+            width: 240px;
+            height: 240px;
+            background-color: #81bcf7;   /* outer layer color */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px auto;
+        }
+
+        /* Profile image */
+        .profile-img{
+            width: 225px;
+            height: 225px;
+            border-radius: 50%;
+            object-fit: cover;          /* keeps face visible */
+            border: 3px solid white;    /* thin inner border */
+        }
+
+        /* Section design */
+        .section{
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Skills */
+        .skill-box{
+            width: 100%;
+            height: 35px;
+            border-radius: 20px;
+            border: 1px solid #000;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .skill-fill{
+            height: 100%;
+            background-color: rgb(109, 190, 241);
+            text-align: center;
+            font-weight: bold;
+            line-height: 35px;
+        }
+
+        /* Project cards */
+        .project-card{
+            border-radius: 15px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover{
+            transform: scale(1.03);
+        }
+
+        /* Form */
+        input, textarea{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar p-3">
+    <div class="container">
+        <h3 class="m-0">My Portfolio</h3>
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container text-center">
+
+    <!-- Profile -->
+    <div class="profile-wrapper">
+        <img src="Profile photo.jpg" class="profile-img" alt="Profile">
+    </div>
+
+    <h1>WELCOME TO MY PORTFOLIO</h1>
+    <h4 class="text-muted">BCA 1st Year Student</h4>
+
+    <!-- About -->
+    <div class="section text-start" id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm <b>Prathibaa P</b>, a BCA student at FACEPrep Campus, Kamaraj College.
+            I am interested in programming, web development, and IT-related fields.
+        </p>
+    </div>
+
+    <!-- Skills -->
+    <div class="section text-start" id="skills">
+        <h2>My Skills</h2>
+
+        <p>Python</p>
+        <div class="skill-box">
+            <div class="skill-fill" style="width:85%">85%</div>
+        </div>
+
+        <p>C Language</p>
+        <div class="skill-box">
+            <div class="skill-fill" style="width:55%">60%</div>
+        </div>
+
+        <p>C++</p>
+        <div class="skill-box">
+            <div class="skill-fill" style="width:70%">70%</div>
+        </div>
+
+        <p>Java</p>
+        <div class="skill-box">
+            <div class="skill-fill" style="width:35%">35%</div>
+        </div>
+
+        <p>HTML</p>
+        <div class="skill-box">
+            <div class="skill-fill" style="width:65%">65%</div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section" id="projects">
+        <h2>My Projects</h2>
+
+        <div class="row mt-4">
+            <!-- Transport Agency -->
+            <div class="col-md-6 mb-4">
+                <div class="project-card">
+                    <h4>🚍 Transport Agency Website</h4>
+                    <p>
+                        A simple transport agency website using HTML & CSS.
+                        Includes services, vehicle details, booking and contact page.
+                    </p>
+                    <a href="transport agency.html".html" class="btn btn-primary">View Project</a>
+
+                </div>
+            </div>
+
+            <!-- Ecommerce Website -->
+            <div class="col-md-6 mb-4">
+                <div class="project-card">
+                    <h4>🛒 E-commerce Website</h4>
+                    <p>
+                        A basic e-commerce website with product listing,
+                        price display, add-to-cart layout and user friendly design.
+                    </p>
+                    <a href="Products.HTML" class="btn btn-success">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="section text-start" id="contact">
+        <h2>Contact Me</h2>
+
+        <p><b>📞 Phone:</b> +91 6382649123</p>
+        <p><b>📧 Email:</b> p.prathibaa07@gmail.com</p>
+        <p><b>📍 Address:</b> Thoothukudi, Tamil Nadu</p>
+
+        <h4 class="mt-4">Send me a message</h4>
+
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Email Address">
+            <input type="text" placeholder="Subject">
+            <textarea rows="4" placeholder="Message"></textarea>
+            <button class="btn btn-dark">💬 Send Message</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
